@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>BigBox Retail Store Marketing</title>
+  <meta charset="utf-8">
+  <meta name="description" content="BigBox Retail Store Marketing">
+  <meta name="author" content="Anantha R. Chadalavada">
+  <meta name="generator" content="slidify" />
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta http-equiv="X-UA-Compatible" content="chrome=1">
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/default.css" media="all" >
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/phone.css" 
+    media="only screen and (max-device-width: 480px)" >
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/slidify.css" >
+  <link rel="stylesheet" href="libraries/highlighters/highlight.js/css/tomorrow.css" />
+  <base target="_blank"> <!-- This amazingness opens all links in a new tab. -->  <link rel=stylesheet href="./assets/css/ribbons.css"></link>
+
+  
+  <!-- Grab CDN jQuery, fall back to local if offline -->
+  <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.7.min.js"></script>
+  <script>window.jQuery || document.write('<script src="libraries/widgets/quiz/js/jquery.js"><\/script>')</script> 
+  <script data-main="libraries/frameworks/io2012/js/slides" 
+    src="libraries/frameworks/io2012/js/require-1.0.8.min.js">
+  </script>
+  
+  
+
+</head>
+<body style="opacity: 0">
+  <slides class="layout-widescreen">
+    
+    <!-- LOGO SLIDE -->
+        <slide class="title-slide segue nobackground">
+  <hgroup class="auto-fadein">
+    <h1>BigBox Retail Store Marketing</h1>
+    <h2>Customer Shopping Analytics</h2>
+    <p>Anantha R. Chadalavada<br/>Data Scientist</p>
+  </hgroup>
+    <a href="https://github.com/anantharamc/DevelopDataProduct/zipball/gh-pages" class="example">
+     Download
+    </a>
+  <article></article>  
+</slide>
+    
+
+    <!-- SLIDES -->
+    <slide class="" id="slide-1" style="background:;">
+  <hgroup>
+    <h2>Overview</h2>
+  </hgroup>
+  <article data-timings="">
+    <p>Imagine you are the Marketing Executive for BigBox Retail Store. You would like to improve sales of maternity products. You would like to do that by targeting marketing efforts towards potential customers who are likely to purchase maternity products.</p>
+
+<h3>Question:</h3>
+
+<p>Can we predict whether a specific customer has a pregnant household?</p>
+
+<h3>Methodology:</h3>
+
+<p>Luckily, BigBox Retail Store has lot of historical customer data on customer purchases including household&#39;s pregnant status. This app will build a machine learning prediction model on the historical data using Random Forest and Genaralized Linear Model.</p>
+
+<ul>
+<li>You will tell the app this customer&#39;s shopping list and demographic information</li>
+<li>App will predict whether the customer likely to have a pregant household</li>
+</ul>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="class" id="id" style="background:;">
+  <hgroup>
+    <h2>Project Motivation &amp; Data</h2>
+  </hgroup>
+  <article data-timings="">
+    <ol>
+<li>This application is based on codebook and data published by &quot;Data Smart&quot; book written by John W. Foreman. (Chapters 6 &amp; 10)</li>
+<li>Data is available at <a href="http://www.wiley.com/go/datasmart">http://www.wiley.com/go/datasmart</a></li>
+<li>Download &quot;Pregnancy.csv&quot; and &quot;Pregnancy_Test.csv&quot; from the above website </li>
+</ol>
+
+<h3>Features</h3>
+
+<ul>
+<li>Customer Implied.Gender (obtained by matching name against Census data)</li>
+<li>Customer address is home/apartment/P.O.Box</li>
+<li>Shopping list: Pregnancy test, Prenatal Vitamins, Ginger Ale, Birth Control ... etc.,</li>
+<li>Recent purchase history on Cigarettes and Wine; Bought them regularly and then recently stopped buying</li>
+</ul>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-3" style="background:;">
+  <hgroup>
+    <h2>Feature Importance</h2>
+  </hgroup>
+  <article data-timings="">
+    <p>The chart below shows variable importance from Random Forest Prediction model.</p>
+
+<p><img src="assets/fig/unnamed-chunk-1-1.png" alt="plot of chunk unnamed-chunk-1"> </p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-4" style="background:;">
+  <hgroup>
+    <h2>Results &amp; Conclusions</h2>
+  </hgroup>
+  <article data-timings="">
+    
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+    <slide class="backdrop"></slide>
+  </slides>
+  <div class="pagination pagination-small" id='io2012-ptoc' style="display:none;">
+    <ul>
+      <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=1 title='Overview'>
+         1
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=2 title='Project Motivation &amp; Data'>
+         2
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=3 title='Feature Importance'>
+         3
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=4 title='Results &amp; Conclusions'>
+         4
+      </a>
+    </li>
+  </ul>
+  </div>  <!--[if IE]>
+    <script 
+      src="http://ajax.googleapis.com/ajax/libs/chrome-frame/1/CFInstall.min.js">  
+    </script>
+    <script>CFInstall.check({mode: 'overlay'});</script>
+  <![endif]-->
+</body>
+  <!-- Load Javascripts for Widgets -->
+  
+  <!-- LOAD HIGHLIGHTER JS FILES -->
+  <script src="libraries/highlighters/highlight.js/highlight.pack.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+  <!-- DONE LOADING HIGHLIGHTER JS FILES -->
+   
+  </html>
