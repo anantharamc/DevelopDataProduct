@@ -62,3 +62,16 @@ varImpPlot(data.rf, type=2)
 
 ## Results & Conclusions
 
+### Out of Sample accuracy:
+
+* RF model > 0.80 and GLM model accuracy > 0.80
+
+### Test cases
+
+1. *Select*: Female, Home, Seabands; deselect all other inputs. *Result*: RF model = Not Pregnant, and GLM Model = Pregnant. This is one of many cases where the results diverge between two models.
+
+2. *Select*: Male, Apartment, Maternity clothes; deselect all other inputs. *Result*: RF model = Pregnant, and GLM model = Pregnant. This is one many other cases where the results converge between two models.
+
+### Conclusion
+
+When both models are converging to give same result = Pregnant, it is more likely the customer has pregnant household and is a candidate for direct marketing.
