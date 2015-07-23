@@ -26,8 +26,8 @@ Can we predict whether a specific customer has a pregnant household?
 
 Luckily, BigBox Retail Store has lot of historical customer data on customer purchases including household's pregnant status. This app will build a machine learning prediction model on the historical data using Random Forest and Genaralized Linear Model.
 
-* You will tell the app this customer's shopping list and demographic information
-* App will predict whether the customer likely to have a pregant household
+* You will tell the app this customer's shopping list and demographic information.
+* App will predict whether the customer likely to have a pregant household.
 
 
 --- .class #id 
