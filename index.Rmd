@@ -26,8 +26,8 @@ Can we predict whether a specific customer has a pregnant household?
 
 Luckily, BigBox Retail Store has lot of historical customer data on customer purchases including household's pregnant status. This app will build a machine learning prediction model on the historical data using Random Forest and Genaralized Linear Model.
 
-* You will tell the app this customer's shopping list and demographic information
-* App will predict whether the customer likely to have a pregant household
+* You will tell the app this customer's shopping list and demographic information.
+* App will predict whether the customer likely to have a pregant household.
 
 
 --- .class #id 
@@ -62,3 +62,16 @@ varImpPlot(data.rf, type=2)
 
 ## Results & Conclusions
 
+### Out of Sample accuracy:
+
+* RF model > 0.80 and GLM model accuracy > 0.80
+
+### Test cases
+
+1. *Select*: Female, Home, Seabands; deselect all other inputs. *Result*: RF model = Not Pregnant, and GLM Model = Pregnant. This is one of many cases where the results diverge between two models.
+
+2. *Select*: Male, Apartment, Maternity clothes; deselect all other inputs. *Result*: RF model = Pregnant, and GLM model = Pregnant. This is one many other cases where the results converge between two models.
+
+### Conclusion
+
+When both models are converging to give same result = Pregnant, it is more likely the customer has pregnant household and is a candidate for direct marketing.
