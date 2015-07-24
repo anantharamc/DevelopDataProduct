@@ -40,6 +40,8 @@ Luckily, BigBox Retail Store has lot of historical customer data on customer pur
 
 ### Features
 
+[Application URL](https://anantharamc.shinyapps.io/DataProductProject)
+
 * Customer Implied.Gender (obtained by matching name against Census data)
 * Customer address is home/apartment/P.O.Box
 * Shopping list: Pregnancy test, Prenatal Vitamins, Ginger Ale, Birth Control ... etc.,
