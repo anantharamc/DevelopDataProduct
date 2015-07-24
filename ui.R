@@ -55,10 +55,20 @@ shinyUI(fluidPage(
                         h4("When the app loads first time, please wait for 60sec while the Prediction models are built (until default predictions display 'Not Pregnant'). Thank you!"),
                         h5("Please see 'Help' tab for usage instructions"),
                         br(),
+                        # There are 3 tabs in this app; 
+                        # 1. Prediction
+                        # 2. Model Summary
+                        # 3. Help
                         tabsetPanel(
+                                
+                                # This first tab dispalys prediction from Random Forest model and GLM
                                 tabPanel("Prediction", "RF Prediction", verbatimTextOutput("pred.rf"), "GLM Prediction", verbatimTextOutput("pred.lm"), "User Input", verbatimTextOutput("inputvalue5")),
+                                
+                                # Second tab shows model performance
                                 tabPanel("Model Summary", "RF Model Summary - Test set", verbatimTextOutput("rfsummary"), "RF Model Summary - Validation set", verbatimTextOutput("oosrfsummary"), 
                                          " GLM Model Summary - Test set", verbatimTextOutput("lmsummary"), "GLM Model Summary - Validation set", verbatimTextOutput("ooslmsummary")), 
+                                
+                                # Third tab provides help text for the app
                                 tabPanel("Help", 
                                                 h4("Scenario"),
                                                 "Imagine you are the Marketing Executive for a BigBox Retail Store. This app will help you predict whether a 
